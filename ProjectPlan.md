@@ -1,18 +1,18 @@
 # Project Plan
 
-##Week 1 (9) - Starts October 28 , ends Nov 3
+## Week 1 (9) - Starts October 28 , ends Nov 3
 | Done? | Person responsible | Task |
 |------|------|-------|
 | [x] | Team | Decide on a name for the webservice|
-| [ ] | Ying | Create project in Intellij|
-| [ ] | Janak | Create an AWS instance for the project|
+| [x] | Ying | Create project in Intellij|
+| [x] | Janak | Create an AWS instance for the project|
 | [ ] | Team | Add to the project log about your work/research/findings|
 | [ ] | Team | Everyone complete Week 9 exercise using the CocktailDB to get familiar with the idea|
-| [ ] | Caroline & Alissa | Draft project plan|
-| [ ] | | Create initial problem statement and solution description|
+| [x] | Caroline & Alissa | Draft project plan|
+| [x] | | Create initial problem statement and solution description|
 
                                                          
-##Week 2 (10) - Starts Nov 4 , ends Nov 10
+## Week 2 (10) - Starts Nov 4 , ends Nov 10
 | Done? | Person responsible | Task |
 |------|------|-------|
 | [ ] | Not Ying | Check the pom.xml and dependencies in Intellij|
@@ -28,7 +28,7 @@
 | [ ] | |Deploy application updates to to AWS|
 
 
-##Week 3 (11) - Starts Nov 11 , ends Nov 17
+## Week 3 (11) - Starts Nov 11 , ends Nov 17
 | Done? | Person responsible | Task |
 |------|------|-------|
 | [ ] | | Update the service to retreive data from the databse and use the Cocktail webservice (no more hardcorded results)|
@@ -40,7 +40,9 @@
 | [ ] | | Deploy application updates to AWS|
 | [ ] | | Create an outline for the project presentation|
 
-##Week 4 (12) - Starts Nov 18
+## Week 4 (12) - Starts Nov 18
+| Done? | Person responsible | Task |
+|------|------|-------|
 | [ ] | | Finish scripting each portion of the presentation|
 | [ ] | | Collect screen shots to add to presentation|
 | [ ] |Team| Practice presentation|
