@@ -8,7 +8,7 @@
 
 ### Project Objectives 
 
-* Security/Authentication
+* 
   * 
   * 
  
