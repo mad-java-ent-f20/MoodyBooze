@@ -20,7 +20,13 @@ For example, someone who is feeling ambitious on a dark winter morning might be 
 
 For developers, Moody Blues can be combined with other webservices to provide a complete planning service for an absolutely tolerable 274th night on the couch. Help people stave off boredom with activity and game suggestions!  
 
-### Design
+### Resources
+
+
+### Service Calls
+
+
+### Design 
 
 * [User Stories](UserStories.md)
 
