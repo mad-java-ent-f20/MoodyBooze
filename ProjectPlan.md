@@ -8,7 +8,7 @@
 | [x] | Janak | Create an AWS instance for the project|
 | [ ] | Team | Add to the project log about your work/research/findings|
 | [ ] | Team | Everyone complete Week 9 exercise using the CocktailDB to get familiar with the idea|
-| [x] | Caroline & Alissa | Draft project plan|
+| [x] | Caroline & Alisa | Draft project plan & user stories|
 | [x] | | Create initial problem statement and solution description|
 
                                                          

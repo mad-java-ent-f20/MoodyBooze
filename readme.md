@@ -22,7 +22,7 @@ For developers, Moody Blues can be combined with other webservices to provide a 
 
 ### Design
 
-* [User Stories](DesignDocuments/UserStories.md)
+* [User Stories](UserStories.md)
 
 
 ### [Project Plan](ProjectPlan.md)
