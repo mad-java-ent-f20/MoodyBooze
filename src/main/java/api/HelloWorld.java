@@ -22,18 +22,18 @@ public class HelloWorld {
     // The Java method will process HTTP GET requests
     @GET
     @Path("/{param}")
-    // The Java method will produce content identified by the MIME Media type "text/plain"
+    // The Java method will produce content identified by the MIME Media type "text/html"
     @Produces({"text/html"})
     public Response getMessageHTML(@PathParam("param") String msg) {
 
-        String outputHtml = "<br><html><body><h1>Hello(HTML): "+ msg + "</h1></body></html>";
+        String outputHtml = "<html><body><h1>Hello(HTML): "+ msg + "</h1></body></html>";
         return Response.status(200).entity(outputHtml).build();
     }
 
     // The Java method will process HTTP GET requests
     @GET
     @Path("/{param}")
-    // The Java method will produce content identified by the MIME Media type "text/plain"
+    // The Java method will produce content identified by the MIME Media type "application/json"
     @Produces({"application/json"})
     public Response getMessageJason(@PathParam("param") String msg) {
         String outputJason = "{\"Hello(Jason)\":\"" + msg + "\"}";
