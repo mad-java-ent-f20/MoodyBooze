@@ -7,7 +7,7 @@ Week 1
 
 Week 2
 * Added User Stories
-* Added 
+
 Week 3
 
 Week 4
