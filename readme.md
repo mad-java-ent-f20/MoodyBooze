@@ -10,7 +10,7 @@ Since the beginning of the coronavirus pandemic, having a bartender fix you a fa
 
 ### Project Objectives 
 
-For people who want to add some festivity to their night in, and perhaps use up the remaining Kahlua from New Years' Eve 2019, the Moody Blues webservice looks up drink recipes. Input options include:
+For people who want to add some festivity to their night in, and perhaps use up the remaining Kahlua from New Years' Eve 2019, the MoodyBooze webservice looks up drink recipes. Input options include:
 * mood
 * season
 * ingredients
