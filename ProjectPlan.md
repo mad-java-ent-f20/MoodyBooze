@@ -18,9 +18,9 @@
 | [ ] | Not Ying | Check the pom.xml and dependencies in Intellij|
 | [x] | | Create a basic service ("Hello World") in the project|
 | [x] | | Create an application configuration class |
-| [ ] | | Write unit tests for the service class (?)|
 | [ ] | | Build the drink database table, add data mapping mood to weather and names of drinks |
 | [ ] | | Create a "drink" entity and a DAO for the "drink" entity (see caroline or janak week 9!)|
+| [ ] | | Write unit tests for the DAO|
 | [ ] | | Implement Hibernate on the drink entity & dao|
 | [ ] | | Updating the hard-coded service and application configuration to utilize the DAO instead of returning a hard-coded string|
 | [ ] | | Create the DAO and other classes to consume the CocktailDB web service |
