@@ -7,7 +7,7 @@
 | [x] | Ying | Create project in Intellij|
 | [x] | Janak | Create an AWS instance for the project|
 | [ ] | Team | Add to the project log about your work/research/findings|
-| [ ] | Team | Everyone complete Week 9 exercise using the CocktailDB to get familiar with the idea|
+| [x] | Team | Everyone complete Week 9 exercise using the CocktailDB to get familiar with the idea|
 | [x] | Caroline & Alisa | Draft project plan & user stories|
 | [x] | | Create initial problem statement and solution description|
 
@@ -16,12 +16,15 @@
 | Done? | Person responsible | Task |
 |------|------|-------|
 | [ ] | Not Ying | Check the pom.xml and dependencies in Intellij|
-| [ ] | | Create a basic service ("Hello World") in the project|
-| [ ] | | Create an application configuration class |
+| [x] | | Create a basic service ("Hello World") in the project|
+| [x] | | Create an application configuration class |
 | [ ] | | Write unit tests for the service class (?)|
+| [ ] | | Build the drink database table, add data mapping mood to weather and names of drinks |
+| [ ] | | Create a "drink" entity and a DAO for the "drink" entity (see caroline or janak week 9!)|
+| [ ] | | Implement Hibernate on the drink entity & dao|
+| [ ] | | Updating the hard-coded service and application configuration to utilize the DAO instead of returning a hard-coded string|
 | [ ] | | Create the DAO and other classes to consume the CocktailDB web service |
 | [ ] | | Write unit tests to test the consumption of the CocktailDB web service |
-| [ ] | | Build the database table, mapping mood to weather and names of drinks |
 | [ ] | | Determine how to do documentation (what will auto-generate, what to write ourselves)|
 | [ ] | | Begin setting up the landing page for the web service |
 | [ ] | Team | Add to the project log about your work/research/findings|
