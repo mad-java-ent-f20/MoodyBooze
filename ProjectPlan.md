@@ -16,6 +16,7 @@
 | Done? | Person responsible | Task |
 |------|------|-------|
 | [ ] | Not Ying | Check the pom.xml and dependencies in Intellij|
+<<<<<<< HEAD
 | [x] | | Create a basic service ("Hello World") in the project|
 | [x] | | Create an application configuration class |
 | [ ] | | Build the drink database table, add data mapping mood to season and names of drinks |
@@ -29,6 +30,21 @@
 | [ ] | | Begin setting up the landing page for the web service |
 | [ ] | Team | Add to the project log about your work/research/findings|
 | [ ] | |Deploy application updates to to AWS|
+=======
+| [x] | Team| Create a basic service ("Hello World") in the project|
+| [x] | Ying| Create an application configuration class |
+| [ ] | Caroline, Alisa(Transfer to Janak)| Build the drink database table, add data mapping mood to weather and names of drinks |
+| [ ] | Janak(Transfer to Ying)| Create a "drink" entity and a DAO for the "drink" entity |
+| [ ] | Ying| Write unit tests for the DAO|
+| [ ] | Alisa| Implement Hibernate on the drink entity & dao|
+| [ ] | Caroline| Updating the hard-coded service and application configuration to utilize the DAO instead of returning a hard-coded string|
+| [ ] | Ying| Create the DAO and other classes to consume the CocktailDB web service |
+| [ ] | Alisa| Write unit tests to test the consumption of the CocktailDB web service |
+| [ ] | Caroline| Determine how to do documentation (what will auto-generate, what to write ourselves)|
+| [ ] | Alisa| Begin setting up the landing page for the web service |
+| [ ] | Team| Add to the project log about your work/research/findings|
+| [ ] | Janak|Deploy application updates to to AWS|
+>>>>>>> 5a6da95bed0f449fe74476c8141fda6aca454dad
 
 
 ## Week 3 (11) - Starts Nov 11 , ends Nov 17
