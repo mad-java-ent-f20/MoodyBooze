@@ -7,6 +7,7 @@ Week 1
 
 Week 2
 * Added User Stories
+* Caroline used the random drink generator in the Cocktail DB to create some seed data for the database. Started to create database but having issues in Intellij not finding it. Planning to build the database on Friday, then give SQL to team so they can build local copies.
 
 Week 3
 
