@@ -22,7 +22,7 @@
 | [ ] | Ying| Write unit tests for the DAO|
 | [ ] | Alisa| Implement Hibernate on the drink entity & dao|
 | [ ] | Caroline| Updating the hard-coded service and application configuration to utilize the DAO instead of returning a hard-coded string|
-| [ ] | Ying, Janak| Create the DAO and other classes to consume the CocktailDB web service |
+| [x] | Ying| Create the DAO and other classes to consume the CocktailDB web service |
 | [ ] | Alisa| Write unit tests to test the consumption of the CocktailDB web service |
 | [ ] | Caroline| Determine how to do documentation (what will auto-generate, what to write ourselves)|
 | [ ] | Alisa| Begin setting up the landing page for the web service |
