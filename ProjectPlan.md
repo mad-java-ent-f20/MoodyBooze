@@ -17,7 +17,7 @@
 |------|------|-------|
 | [x] | Team| Create a basic service ("Hello World") in the project|
 | [x] | Ying| Create an application configuration class |
-| [ ] | Caroline, Alisa(Transfer to Janak)| Build the drink database table, add data mapping mood to season and names of drinks |
+| [x] | Caroline, Alisa(Transfer to Janak)| Build the drink database table, add data mapping mood to season and names of drinks |
 | [ ] | Janak(Transfer to Ying)| Create a "drink" entity and a DAO for the "drink" entity |
 | [ ] | Ying| Write unit tests for the DAO|
 | [ ] | Alisa| Implement Hibernate on the drink entity & dao|
