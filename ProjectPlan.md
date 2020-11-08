@@ -15,8 +15,6 @@
 ## Week 2 (10) - Starts Nov 4 , ends Nov 10
 | Done? | Person responsible | Task |
 |------|------|-------|
-
-=======
 | [x] | Team| Create a basic service ("Hello World") in the project|
 | [x] | Ying| Create an application configuration class |
 | [ ] | Caroline, Alisa(Transfer to Janak)| Build the drink database table, add data mapping mood to season and names of drinks |
