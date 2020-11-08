@@ -18,7 +18,8 @@
 --
 -- Table structure for table `drink`
 --
-
+/*CREATE DATABASE moodybooze
+  USE moodybooze;*/
 DROP TABLE IF EXISTS `drink`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
