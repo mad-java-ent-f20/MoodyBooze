@@ -9,7 +9,7 @@
 
 <session-factory>
 
-    <property name="connection.url">jdbc:mysql://localhost:3306/CocktailDB?serverTimezone=UTC</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/moodybooze?serverTimezone=UTC</property>
 
     <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
