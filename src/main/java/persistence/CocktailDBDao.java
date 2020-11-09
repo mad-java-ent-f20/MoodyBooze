@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 
 
 public class CocktailDBDao {
-    DrinksItem getResponse() throws JsonProcessingException {
+    ResponseDrink getResponse() throws JsonProcessingException {
         Client client = ClientBuilder.newClient();
 
         WebTarget target = client.target("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007");
@@ -20,7 +20,7 @@ public class CocktailDBDao {
 
 
         ObjectMapper mapper = new ObjectMapper();
-        DrinksItem responseAPI = mapper.readValue(response, DrinksItem.class);
+        ResponseDrink responseAPI = mapper.readValue(response, ResponseDrink.class);
         return responseAPI;
     }
 }
