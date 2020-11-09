@@ -11,16 +11,18 @@ import javax.ws.rs.core.MediaType;
 
 
 public class CocktailDBDao {
-    ResponseDrink getResponse() throws JsonProcessingException {
+    ResponseDrink getResponseDrink() throws JsonProcessingException {
         Client client = ClientBuilder.newClient();
-
         WebTarget target = client.target("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007");
-
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
-
         ObjectMapper mapper = new ObjectMapper();
-        ResponseDrink responseAPI = mapper.readValue(response, ResponseDrink.class);
+        ResponseDrink responseAPI = null;
+        try {
+            responseAPI = mapper.readValue(response, ResponseDrink.class);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
         return responseAPI;
     }
 }

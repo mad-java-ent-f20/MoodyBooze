@@ -1,2 +1,2 @@
-delete from drink;
+DROP TABLE  drink;
 INSERT INTO drink VALUES (1,'Champagne cocktail','Celebratory','Spring'),(2,'Blue Hurricane','Excited','Summer'),(3,'The Philosopher','Anxious','Winter'),(62,'Amaretto Tea','Stressed','Fall');
