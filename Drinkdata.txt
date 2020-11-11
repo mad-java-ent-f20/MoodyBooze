@@ -1,0 +1,76 @@
+Champagne cocktail	Celebratory	Spring
+California Lemonade	Crushed	Spring
+Lemon Drop	Blissful	Spring
+English Rose Cocktail	Calm	Spring
+Zorro	Stressed	Spring
+French Connection	Excited	Spring
+Blueberry mojito	Energetic	Spring
+Kamikaze	Flirty	Spring
+Masala Chai	Drained	Spring
+Stone Sour	Disappointed	Spring
+After Dinner Cocktail	Gloomy	Spring
+Masala Chai	Anxious	Spring
+Godfather	Grumpy	Spring
+The Strange Weaver	Peaceful	Spring
+Boxcar	Cranky	Spring
+Gin Sour	Ambitious	Spring
+English Highball	Relieved	Spring
+Bobby Burns Cocktail	Hopeful	Spring
+Mimosa	Festive	Spring
+Bee's Knees	Celebratory	Summer
+Orange Crush	Crushed	Summer
+Daiquiri	Blissful	Summer
+Caipirinha	Calm	Summer
+Quarter Deck Cocktail	Stressed	Summer
+Blue Hurricane	Excited	Summer
+Blueberry mojito	Energetic	Summer
+Gin Daisy	Flirty	Summer
+Rum Runner	Drained	Summer
+Grand Blue	Disappointed	Summer
+Tequila Sunrise	Gloomy	Summer
+Hemingway Special	Anxious	Summer
+Alabama Slammer	Grumpy	Summer
+Dragonfly	Peaceful	Summer
+Strawberry Shivers	Cranky	Summer
+Gin Swizzle	Ambitious	Summer
+Victory Collins	Relieved	Summer
+Smashed Watermelon Margarita	Hopeful	Summer
+Bora Bora	Festive	Summer
+Bellini	Celebratory	Winter
+Arizona Antifreeze	Crushed	Winter
+Tom Collins	Blissful	Winter
+Honey Bee	Calm	Winter
+Brandy Alexander	Stressed	Winter
+Greyhound	Excited	Winter
+Salty Dog	Energetic	Winter
+Negroni	Flirty	Winter
+After Five	Drained	Winter
+Veteran	Disappointed	Winter
+A Furlong Too Late	Gloomy	Winter
+The Philosopher	Anxious	Winter
+A Day at the Beach	Grumpy	Winter
+Orange Scented Hot Chocolate	Peaceful	Winter
+Black Russian	Cranky	Winter
+Victor	Ambitious	Winter
+Tomato Tang	Relieved	Winter
+Spice 75	Hopeful	Winter
+Egg Nog	Festive	Winter
+Old Fashioned	Celebratory	Fall
+Blind Russian	Crushed	Fall
+Cosmopolitan	Blissful	Fall
+Cuba Libre	Calm	Fall
+Amaretto Tea	Stressed	Fall
+Espresso Martini	Excited	Fall
+The Last Word	Energetic	Fall
+Sazerac	Flirty	Fall
+Alexander	Drained	Fall
+Clove Cocktail	Disappointed	Fall
+Grim Reaper	Gloomy	Fall
+Vampiro	Anxious	Fall
+Dirty Martini	Grumpy	Fall
+Boston Sour	Peaceful	Fall
+Adam	Cranky	Fall
+Manhattan	Ambitious	Fall
+Applecar	Relieved	Fall
+Imperial Fizz	Hopeful	Fall
+Halloween Punch	Festive	Fall
