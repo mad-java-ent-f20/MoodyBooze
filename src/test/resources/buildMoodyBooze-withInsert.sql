@@ -39,7 +39,7 @@ CREATE TABLE `drink` (
 LOCK TABLES `drink` WRITE;
 /*!40000 ALTER TABLE `drink` DISABLE KEYS */;
 INSERT INTO `drink` (`id`, `drink_name`, `drink_mood`, `drink_season`) VALUES (
-	1,'Champagne cocktail','Celebratory','Spring'),(
+1,'Champagne cocktail','Celebratory','Spring'),(
 2,'California Lemonade','Crushed','Spring'),(
 3,'Lemon Drop','Blissful','Spring'),(
 4,'English Rose Cocktail','Calm','Spring'),(
