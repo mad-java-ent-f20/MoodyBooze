@@ -22,7 +22,7 @@ public class Recipes {
     public Response getMessageJason(@PathParam("param") String mood) {
         //This should be a call to a DAO that would have a method to getByMood
         GenericDao<Drink> genericDao = DaoFactory.createDao(Drink.class);
-        //do so
+     
         
     
 
