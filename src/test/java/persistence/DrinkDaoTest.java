@@ -55,7 +55,6 @@ class DrinkDaoTest {
         String expectedDrink = "Magarita";
         String actualDrink = insertedDrink.getName();
         assertTrue(expectedDrink.equals(actualDrink));
-
     }
 
     /**

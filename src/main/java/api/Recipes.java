@@ -1,7 +1,10 @@
 package api;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import entity.Drink;
+import persistence.CocktailDBDao;
 import persistence.GenericDao;
+import utilities.DaoFactory;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -18,43 +21,26 @@ public class Recipes {
     @Path("/{param}")
     // The Java method will produce content identified by the MIME Media type "application/json"
     @Produces({"application/json"})
-    public Response getMessageJason(@PathParam("param") String mood) {
+    public Response getMessageJason(@PathParam("param") String inputmood) throws JsonProcessingException {
         //This should be a call to a DAO that would have a method to getByMood
-        GenericDao dao = new GenericDao(Drink); //TODO fix how this constructor is called
-        //do so
-        List<Drink> myDrinks = dao.getByPropertyEqual(mood, mood);
+        GenericDao<Drink> genericDao = DaoFactory.createDao(Drink.class);
+        List<Drink> myDrinks = genericDao.getByPropertyEqual("mood", inputmood);
 
-        //go through the list of drinks that match the mood & return them
-        for (Drink eachdrink : myDrinks) {
-            String drinkDescription = eachdrink.toString();
-            String output = drinkDescription;
-            return Response.status(200).entity(output).build();
+        CocktailDBDao dao = new CocktailDBDao();
+
+        String StrIngredient12;
+        for(DrinksItem drink : dao.getResponseDrink().getDrinks()) {
+            if (drink.getStrIngredient12() == null) {
+                StrIngredient12 = "";
+            } else {
+                StrIngredient12 = (String) drink.getStrIngredient12();
+            }
+
+                    String myOneDrink =  "Your drink is "+ drink.getStrDrink() + "\n" + StrIngredient12 + "\n" + drink.getStrIngredient2();
+            return Response.status(200).entity(myOneDrink).build();
         }
 
         return null;
-    // The Java method will process HTTP GET requests
-    //@GET
-    //@Path("/{param}")
-    // The Java method will produce content identified by the MIME Media type "text/plain"
-    /* @Produces({"text/plain"})
-    public Response getMessageText(@PathParam("param") String msg) {
-        // Return a simple message
-        String outputString = "Hello(text): "+ msg;
-        return Response.status(200).entity(outputString).build();
-    }
-    */
-
-    // The Java method will process HTTP GET requests
-    //@GET
-    //@Path("/{param}")
-    // The Java method will produce content identified by the MIME Media type "text/html"
-    /*@Produces({"text/html"})
-    public Response getMessageHTML(@PathParam("param") String msg) {
-
-        String outputHtml = "<html><body><h1>Hello(HTML): "+ msg + "</h1></body></html>";
-        return Response.status(200).entity(outputHtml).build();
-    }
-    */
 
     }
 }
