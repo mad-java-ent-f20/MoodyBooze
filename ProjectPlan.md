@@ -21,7 +21,7 @@
 | [x] | Janak(Transfer to Ying)| Create a "drink" entity and a DAO for the "drink" entity |
 | [x] | Ying| Write unit tests for the DAO|
 | [x] | Alisa| Implement Hibernate on the drink entity & dao|
-| [ ] | Caroline| Updating the hard-coded service and application configuration to utilize the DAO instead of returning a hard-coded string|
+| [x] | Caroline| Updating the hard-coded service and application configuration to utilize the DAO instead of returning a hard-coded string|
 | [x] | Ying| Create the DAO and other classes to consume the CocktailDB web service |
 | [x] | Alisa| Write unit tests to test the consumption of the CocktailDB web service |
 | [ ] | Caroline| Determine how to do documentation (what will auto-generate, what to write ourselves)|
@@ -32,18 +32,27 @@
 ## Week 3 (11) - Starts Nov 11 , ends Nov 17
 | Done? | Person responsible | Task |
 |------|------|-------|
-| [ ] | | Update the service to retreive data from the databse and use the Cocktail webservice (no more hardcorded results)|
-| [ ] | | Write documentation describing query parameters, etc|
-| [ ] | | Expand the service to include ingredients-based queries|
-| [ ] | | Add to the database to include ingredients information for each drink |
-| [ ] | | Test the updates to the service|
-| [ ] | | Continue building landing page|
-| [ ] | | Deploy application updates to AWS|
-| [ ] | | Create an outline for the project presentation|
-
-## Week 4 (12) - Starts Nov 18
-| Done? | Person responsible | Task |
-|------|------|-------|
-| [ ] | | Finish scripting each portion of the presentation|
+| [x] |Sort of done... we're not returning an object right now. | Update the service to retreive data from the databse and use the Cocktail webservice (no more hardcorded results)|
+| [ ] | | Format/label the data results|
+| [ ] |Caroline| Write documentation describing query parameters, etc|
+| [ ] |Janak| Expand the service to include a two-parameter (season and mood)|
+| [ ] |Not doing this?| Add to the database to include ingredients information for each drink |
+| [ ] |Team during meeting on Monday| Test the updates to the service|
+| [ ] |Alisa| Continue building landing page|
+| [ ] |Janak| Deploy application updates to AWS|
+| [ ] |Caroline - during practice| Create an outline for the project presentation|
+| [ ] |Team during meeting Wednesday| Finish scripting each portion of the presentation|
 | [ ] | | Collect screen shots to add to presentation|
-| [ ] |Team| Practice presentation|
+| [ ] |Team - Wednesday before class| Practice presentation|
+
+Monday night 8:15 - meet up and make sure API is working correctly
+Documentation should be ready
+Tuesday - team isn't free at the same time
+
+Presentation outline:
+1. Readme on GitHub
+2. About our database
+3. Consuming the cocktailDB webservice for recipe data
+4. Two parameter options for searching
+
+
