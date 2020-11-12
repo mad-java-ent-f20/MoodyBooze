@@ -2,6 +2,7 @@ package api;
 
 import entity.Drink;
 import persistence.GenericDao;
+import utilities.DaoFactory;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -20,9 +21,9 @@ public class Recipes {
     @Produces({"application/json"})
     public Response getMessageJason(@PathParam("param") String mood) {
         //This should be a call to a DAO that would have a method to getByMood
-        GenericDao dao = new GenericDao(Drink); //TODO fix how this constructor is called
+        GenericDao<Drink> genericDao = DaoFactory.createDao(Drink.class);
         //do so
-        List<Drink> myDrinks = dao.getByPropertyEqual(mood, mood);
+        List<Drink> myDrinks = genericDao.getByPropertyEqual(mood, mood);
 
         //go through the list of drinks that match the mood & return them
         for (Drink eachdrink : myDrinks) {
