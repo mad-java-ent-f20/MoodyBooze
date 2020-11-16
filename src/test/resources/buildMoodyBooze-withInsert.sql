@@ -18,8 +18,8 @@
 --
 -- Table structure for table `drink`
 --
-/*CREATE DATABASE moodybooze
-  USE moodybooze;*/
+CREATE DATABASE moodybooze
+  USE moodybooze;
 DROP TABLE IF EXISTS `drink`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
@@ -39,7 +39,7 @@ CREATE TABLE `drink` (
 LOCK TABLES `drink` WRITE;
 /*!40000 ALTER TABLE `drink` DISABLE KEYS */;
 INSERT INTO `drink` (`id`, `drink_name`, `drink_mood`, `drink_season`) VALUES (
-	1,'Champagne cocktail','Celebratory','Spring'),(
+1,'Champagne cocktail','Celebratory','Spring'),(
 2,'California Lemonade','Crushed','Spring'),(
 3,'Lemon Drop','Blissful','Spring'),(
 4,'English Rose Cocktail','Calm','Spring'),(
