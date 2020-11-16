@@ -101,4 +101,15 @@ class DrinkDaoTest {
         assertEquals(1, drinks.size());
     }
 
+    /**
+     * Verify successful
+     */
+    @Test
+    void GetDrinkNameSuccess() {
+        List<Drink> drinks = (List<Drink>) genericDao.GetDrinkName("Celebratory", "Spring");
+        //assertEquals(1, drinks.size());
+        System.out.println(drinks);
+    }
+
+
 }

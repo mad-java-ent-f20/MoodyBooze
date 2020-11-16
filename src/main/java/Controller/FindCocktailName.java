@@ -47,7 +47,6 @@ public class FindCocktailName extends HttpServlet {
 
 
 
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
         dispatcher.forward(req, resp);
     }

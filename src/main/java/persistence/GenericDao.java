@@ -166,7 +166,7 @@ public class GenericDao<T> {
      * @return
      */
     /* Method to  READ all the employees using Scalar Query */
-    public Drink GetDrinkName(String moodParam, String seasonParam){
+    public Drink GetDrinkName(String moodParam, String seasonParam) {
         Session session = getSession();
         Transaction tx = null;
 
@@ -176,20 +176,22 @@ public class GenericDao<T> {
             //CriteriaQuery<T> query = builder.createQuery(type);
             //Root<T> root = query.from(type);
             //query.where(builder.like(moodParam, "%" + seasonParam + "%"));
+            String sql = "SELECT drink_name FROM drink WHERE drink_mood = 'Celebratory' and drink_season = 'Spring'";
+            System.out.println(sql);
             //String sql = "SELECT drink_name FROM drink WHERE drink_mood LIKE %moodParam and drink_season LIKE %seasonParam";
-            String sql = "SELECT * FROM drink";
+            //String sql = "SELECT * FROM drink";
             SQLQuery query = session.createSQLQuery(sql);
             //query = session.createSQLQuery(sql);
             //query.setResultTransformer(Criteria.ALIAS_TO_ENTITY_MAP);
             query.addEntity(Drink.class);
-            List data = query.list();
+            //List data = query.list();
 
-            for (Iterator iterator = data.iterator(); iterator.hasNext();){
-                Drink drink = (Drink) iterator.next();
+            //for (Iterator iterator = data.iterator(); iterator.hasNext();){
+                Drink drink = new Drink();
                 System.out.print("DRINK Name: " + drink.getName());
                 System.out.print("DRINK mood: " + drink.getMood());
                 System.out.print("DRINK season: " + drink.getWeather());
-            }
+            //}
             tx.commit();
         } catch (HibernateException e) {
             if (tx!=null) tx.rollback();
