@@ -15,7 +15,7 @@
 
     <property name="connection.username">root</property>
 
-    <property name="connection.password">Y0n0recuerdo!</property>
+    <property name="connection.password">student</property>
 
     <property name="hibernate.c3p0.min_size">5</property>
 
