@@ -168,13 +168,16 @@ public class GenericDao<T> {
         Session session = getSession();
         Transaction tx = null;
         List  query = null;
+
+
         try {
             tx = session.beginTransaction();
             //CriteriaBuilder builder = session.getCriteriaBuilder();
             //CriteriaQuery<T> query = builder.createQuery(type);
             //Root<T> root = query.from(type);
             //query.where(builder.like(moodParam, "%" + seasonParam + "%"));
-            String sql = "SELECT drink_name FROM drink WHERE drink_mood = 'Celebratory' and drink_season = 'Spring'";
+            //String sql = "SELECT drink_name FROM drink WHERE drink_mood =""'"  + moodParam +  "'"" and drink_season =  ""'" + seasonParam + "'";
+            String sql = "SELECT drink_name FROM drink WHERE drink_mood = '" + moodParam + "' and drink_season = '" + seasonParam + "'";
             System.out.println(sql);
             //String sql = "SELECT drink_name FROM drink WHERE drink_mood LIKE %moodParam and drink_season LIKE %seasonParam";
             //String sql = "SELECT * FROM drink";

@@ -2,6 +2,7 @@ package Controller;
 
 
 import entity.Drink;
+import entity.DrinkName;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import persistence.GenericDao;
@@ -39,6 +40,8 @@ public class FindCocktailName extends HttpServlet {
 
         GenericDao<Drink> dao = DaoFactory.createDao(Drink.class);
         Drink cocktail = (Drink) dao.GetDrinkName(param1, param2);
+        DrinkName drink1 = new DrinkName();
+        drink1.setDrinkName("Champagne cocktail");
         //getByPropertyEqual(, param1);
         //req.setAttribute("nameCocktail", cocktail);
         //logger.debug("Sending back the nameCocktail..." + cocktail);
