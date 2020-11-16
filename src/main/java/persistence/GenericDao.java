@@ -164,10 +164,10 @@ public class GenericDao<T> {
      * @return
      */
     /* Method to  READ all the employees using Scalar Query */
-    public List GetDrinkName(String moodParam, String seasonParam) {
+    public String GetDrinkName(String moodParam, String seasonParam) {
         Session session = getSession();
         Transaction tx = null;
-        List  query = null;
+        String  query = null;
 
         try {
             tx = session.beginTransaction();
@@ -175,7 +175,7 @@ public class GenericDao<T> {
             String sql = "SELECT drink_name FROM drink WHERE drink_mood = '" + moodParam + "' and drink_season = '" + seasonParam + "'";
             System.out.println(sql);
 
-             query = session.createSQLQuery(sql).getResultList();
+             query = String.valueOf(session.createSQLQuery(sql).getResultList());
 
             tx.commit();
         } catch (HibernateException e) {
