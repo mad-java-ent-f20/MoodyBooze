@@ -1,15 +1,16 @@
 package persistence;
 
 
+import entity.Drink;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
+import org.hibernate.*;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -42,8 +43,9 @@ public class GenericDao<T> {
     /**
      * Get entity by id
      *
-     * @param id entity
-     * @return entity
+     * @param <T> the type parameter
+     * @param id  entity
+     * @return entity by id
      */
     public <T>T getById(int id) {
         Session session = getSession();
@@ -64,6 +66,7 @@ public class GenericDao<T> {
         transaction.commit();
         session.close();
     }
+
     /**
      * Return a list of all entity
      *
@@ -154,5 +157,47 @@ public class GenericDao<T> {
         List<T> entities = session.createQuery( query ).getResultList();
         session.close();
         return entities;
+    }
+
+    /**
+     * Get drink name list.
+     *  @param moodParam   the mood param
+     * @param seasonParam the season param
+     * @return
+     */
+    /* Method to  READ all the employees using Scalar Query */
+    public Drink GetDrinkName(String moodParam, String seasonParam){
+        Session session = getSession();
+        Transaction tx = null;
+
+        try {
+            tx = session.beginTransaction();
+            //CriteriaBuilder builder = session.getCriteriaBuilder();
+            //CriteriaQuery<T> query = builder.createQuery(type);
+            //Root<T> root = query.from(type);
+            //query.where(builder.like(moodParam, "%" + seasonParam + "%"));
+            //String sql = "SELECT drink_name FROM drink WHERE drink_mood LIKE %moodParam and drink_season LIKE %seasonParam";
+            String sql = "SELECT * FROM drink";
+            SQLQuery query = session.createSQLQuery(sql);
+            //query = session.createSQLQuery(sql);
+            //query.setResultTransformer(Criteria.ALIAS_TO_ENTITY_MAP);
+            query.addEntity(Drink.class);
+            List data = query.list();
+
+            for (Iterator iterator = data.iterator(); iterator.hasNext();){
+                Drink drink = (Drink) iterator.next();
+                System.out.print("DRINK Name: " + drink.getName());
+                System.out.print("DRINK mood: " + drink.getMood());
+                System.out.print("DRINK season: " + drink.getWeather());
+            }
+            tx.commit();
+        } catch (HibernateException e) {
+            if (tx!=null) tx.rollback();
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+
+        return null;
     }
 }

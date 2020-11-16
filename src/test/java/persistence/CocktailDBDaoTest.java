@@ -18,7 +18,7 @@ class CocktailDBDaoTest {
         CocktailDBDao dao = new CocktailDBDao();
 
         for (DrinksItem drink : dao.getResponseDrink().getDrinks()){
-            assertEquals("vodka", drink.getStrDrink());
+            assertEquals("Margarita", drink.getStrDrink());
         }
     }
 }
