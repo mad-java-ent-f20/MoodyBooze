@@ -38,20 +38,24 @@ public class FindCocktailName extends HttpServlet {
         String param1 = req.getParameter("mood");
         String param2 = req.getParameter("season");
 
-        GenericDao<Drink> dao = DaoFactory.createDao(Drink.class);
-        Drink cocktail = (Drink) dao.GetDrinkName(param1, param2);
-        DrinkName drink1 = new DrinkName();
-        drink1.setDrinkName("Champagne cocktail");
+        //GenericDao<Drink> dao = DaoFactory.createDao(Drink.class);
+        //Drink cocktail = (Drink) dao.GetDrinkName(param1, param2);
+
         //getByPropertyEqual(, param1);
         //req.setAttribute("nameCocktail", cocktail);
         //logger.debug("Sending back the nameCocktail..." + cocktail);
 
-        req.setAttribute("drinks", cocktail);
+        GenericDao genericDao = new GenericDao(Drink.class);
+        List cocktail =  genericDao.GetDrinkName(param1, param2);
 
+        DrinkName drink1 = new DrinkName();
+        drink1.setDrinkName(cocktail);
+        //System.out.println(drink1.getDrinkName());
 
+        //req.setAttribute("drinks", cocktail);
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
-        dispatcher.forward(req, resp);
+        //RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
+        //dispatcher.forward(req, resp);
     }
 
 }

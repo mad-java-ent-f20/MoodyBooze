@@ -169,30 +169,14 @@ public class GenericDao<T> {
         Transaction tx = null;
         List  query = null;
 
-
         try {
             tx = session.beginTransaction();
-            //CriteriaBuilder builder = session.getCriteriaBuilder();
-            //CriteriaQuery<T> query = builder.createQuery(type);
-            //Root<T> root = query.from(type);
-            //query.where(builder.like(moodParam, "%" + seasonParam + "%"));
-            //String sql = "SELECT drink_name FROM drink WHERE drink_mood =""'"  + moodParam +  "'"" and drink_season =  ""'" + seasonParam + "'";
+
             String sql = "SELECT drink_name FROM drink WHERE drink_mood = '" + moodParam + "' and drink_season = '" + seasonParam + "'";
             System.out.println(sql);
-            //String sql = "SELECT drink_name FROM drink WHERE drink_mood LIKE %moodParam and drink_season LIKE %seasonParam";
-            //String sql = "SELECT * FROM drink";
-             query = session.createSQLQuery(sql).getResultList();
-            //query = session.createSQLQuery(sql);
-            //query.setResultTransformer(Criteria.ALIAS_TO_ENTITY_MAP);
-            //query.addEntity(Drink.class);
-            //List data = query.list();
 
-            //for (Iterator iterator = data.iterator(); iterator.hasNext();){
-                //Drink drink = new Drink();
-//                System.out.print("DRINK Name: " + drink.getName());
-//                System.out.print("DRINK mood: " + drink.getMood());
-//                System.out.print("DRINK season: " + drink.getWeather());
-//            //}
+             query = session.createSQLQuery(sql).getResultList();
+
             tx.commit();
         } catch (HibernateException e) {
             if (tx!=null) tx.rollback();

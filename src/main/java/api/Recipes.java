@@ -5,6 +5,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import entity.Drink;
 import persistence.CocktailDBDao;
 import persistence.GenericDao;
+import persistence.GetDrinkNameForAPI;
 import utilities.DaoFactory;
 
 import javax.ws.rs.GET;
@@ -19,15 +20,15 @@ public class Recipes {
 
     // The Java method will process HTTP GET requests
     @GET
-    @Path("/{param}")
+    //@Path("/{param}")
     // The Java method will produce content identified by the MIME Media type "application/json"
     @Produces({"application/json"})
-    public Response getMessageJason(@PathParam("param") String drinkName) throws JsonProcessingException {
+    public Response getMessageJason() throws JsonProcessingException {
         //This should be a call to a DAO that would have a method to getByMood
         GenericDao<Drink> genericDao = DaoFactory.createDao(Drink.class);
-        List<Drink> myDrinks = genericDao.getByPropertyEqual("name", drinkName);
+        //List<Drink> myDrinks = genericDao.getByPropertyEqual("name", drinkName);
 
-        CocktailDBDao dao = new CocktailDBDao();
+        GetDrinkNameForAPI dao = new GetDrinkNameForAPI();
 
         String strIngredient1;
         String strIngredient2;
@@ -41,7 +42,7 @@ public class Recipes {
         String strMeasurement4;
         String strMeasurement5;
 
-        for(DrinksItem drink : dao.getResponseDrink().getDrinks()) {
+        for(DrinksItem drink : dao.getResponseDrinkFromAPI().getDrinks()) {
             if (drink.getStrIngredient1() == null) {
                 strIngredient1 = "";
             } else {

@@ -1,8 +1,10 @@
 package entity;
 
+import java.util.List;
+
 public class DrinkName {
 
-    String DrinkName;
+    List DrinkName;
 
     @Override
     public String toString() {
@@ -11,11 +13,11 @@ public class DrinkName {
                 '}';
     }
 
-    public String getDrinkName() {
+    public List getDrinkName() {
         return DrinkName;
     }
 
-    public void setDrinkName(String drinkName) {
+    public void setDrinkName(List drinkName) {
         DrinkName = drinkName;
     }
 }
