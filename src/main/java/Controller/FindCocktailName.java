@@ -1,4 +1,4 @@
-packpackage Controller;
+package Controller;
 
 
 import entity.Drink;
@@ -38,7 +38,7 @@ public class FindCocktailName extends HttpServlet {
         String param2 = req.getParameter("season");
 
         GenericDao<Drink> dao = DaoFactory.createDao(Drink.class);
-        Drink cocktail = dao.GetDrinkName(param1, param2);
+        Drink cocktail = (Drink) dao.GetDrinkName(param1, param2);
         //getByPropertyEqual(, param1);
         //req.setAttribute("nameCocktail", cocktail);
         //logger.debug("Sending back the nameCocktail..." + cocktail);

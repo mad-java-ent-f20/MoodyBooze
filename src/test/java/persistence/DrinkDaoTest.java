@@ -108,9 +108,9 @@ class DrinkDaoTest {
      */
     @Test
     void GetDrinkNameSuccess() {
-        List<Drink> drinks = (List<Drink>) genericDao.GetDrinkName("Celebratory", "Spring");
+        List drinks =  genericDao.GetDrinkName("Celebratory", "Spring");
         //assertEquals(1, drinks.size());
-        System.out.println(drinks);
+        System.out.println("this" + drinks);
     }
 
 

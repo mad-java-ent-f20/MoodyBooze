@@ -1,7 +1,6 @@
 package persistence;
 
 
-import entity.Drink;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.*;
@@ -10,7 +9,6 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -166,10 +164,10 @@ public class GenericDao<T> {
      * @return
      */
     /* Method to  READ all the employees using Scalar Query */
-    public Drink GetDrinkName(String moodParam, String seasonParam) {
+    public List GetDrinkName(String moodParam, String seasonParam) {
         Session session = getSession();
         Transaction tx = null;
-
+        List  query = null;
         try {
             tx = session.beginTransaction();
             //CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -180,18 +178,18 @@ public class GenericDao<T> {
             System.out.println(sql);
             //String sql = "SELECT drink_name FROM drink WHERE drink_mood LIKE %moodParam and drink_season LIKE %seasonParam";
             //String sql = "SELECT * FROM drink";
-            SQLQuery query = session.createSQLQuery(sql);
+             query = session.createSQLQuery(sql).getResultList();
             //query = session.createSQLQuery(sql);
             //query.setResultTransformer(Criteria.ALIAS_TO_ENTITY_MAP);
-            query.addEntity(Drink.class);
+            //query.addEntity(Drink.class);
             //List data = query.list();
 
             //for (Iterator iterator = data.iterator(); iterator.hasNext();){
-                Drink drink = new Drink();
-                System.out.print("DRINK Name: " + drink.getName());
-                System.out.print("DRINK mood: " + drink.getMood());
-                System.out.print("DRINK season: " + drink.getWeather());
-            //}
+                //Drink drink = new Drink();
+//                System.out.print("DRINK Name: " + drink.getName());
+//                System.out.print("DRINK mood: " + drink.getMood());
+//                System.out.print("DRINK season: " + drink.getWeather());
+//            //}
             tx.commit();
         } catch (HibernateException e) {
             if (tx!=null) tx.rollback();
@@ -200,6 +198,6 @@ public class GenericDao<T> {
             session.close();
         }
 
-        return null;
+        return query;
     }
 }
