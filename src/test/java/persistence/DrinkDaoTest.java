@@ -88,6 +88,8 @@ class DrinkDaoTest {
     @Test
     void getByPropertyEqualSuccess() {
         List<Drink> drinks = genericDao.getByPropertyEqual("mood", "Stressed");
+        System.out.println(drinks);
+
         assertEquals(1, drinks.size());
         assertEquals(62, drinks.get(0).getId());
     }
