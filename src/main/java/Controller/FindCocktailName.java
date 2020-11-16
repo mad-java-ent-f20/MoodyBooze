@@ -1,8 +1,10 @@
 package Controller;
 
 
+import entity.Drink;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -31,7 +33,12 @@ public class FindCocktailName extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 
+        String param1 = req.getParameter("mood");
+        String param2 = req.getParameter("season");
 
+        GenericDao userDao = new GenericDao(Drink.class);
+
+        //userDao.getByPropertyEqual("drink_name" param1);
 
         //GenericDao<Cocktail> dao = DaoFactory.createDao(Cocktail.class);
         //List<Cocktail> cocktail = dao.getName();
