@@ -17,8 +17,10 @@ class CocktailDBDaoTest {
     void getResponseSuccess() throws JsonProcessingException {
         CocktailDBDao dao = new CocktailDBDao();
 
-        for (DrinksItem drink : dao.getResponseDrink().getDrinks()){
+        for (DrinksItem drink : dao.getResponseDrink("Champagne%20cocktail").getDrinks()){
             assertEquals("Champagne Cocktail", drink.getStrDrink());
         }
     }
+
+
 }

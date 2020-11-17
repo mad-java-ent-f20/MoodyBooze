@@ -5,7 +5,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import entity.Drink;
 import persistence.CocktailDBDao;
 import persistence.GenericDao;
-import persistence.GetDrinkNameForAPI;
 import utilities.DaoFactory;
 
 import javax.ws.rs.GET;
@@ -43,9 +42,9 @@ public class Recipes {
         String strMeasurement4;
         String strMeasurement5;
 
-        GetDrinkNameForAPI dao = new GetDrinkNameForAPI();
+        CocktailDBDao dao = new CocktailDBDao();
 
-        for(DrinksItem drink : dao.getResponseDrinkFromAPI(cocktailWithoutSpace).getDrinks()) {
+        for(DrinksItem drink : dao.getResponseDrink(cocktailWithoutSpace).getDrinks()) {
             if (drink.getStrIngredient1() == null) {
                 strIngredient1 = "";
             } else {

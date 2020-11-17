@@ -12,11 +12,11 @@ import javax.ws.rs.core.MediaType;
 
 
 public class CocktailDBDao {
-    public ResponseDrink getResponseDrink() throws JsonProcessingException {
-        Client client = ClientBuilder.newClient();
-        String cocktailName = "Champagne%20cocktail";
+    public ResponseDrink getResponseDrink(String nameDrink) throws JsonProcessingException {
 
-        WebTarget target = client.target("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + cocktailName);
+        Client client = ClientBuilder.newClient();
+
+        WebTarget target = client.target("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + nameDrink);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
         ObjectMapper mapper = new ObjectMapper();
