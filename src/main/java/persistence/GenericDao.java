@@ -173,7 +173,6 @@ public class GenericDao<T> {
             tx = session.beginTransaction();
 
             String sql = "SELECT drink_name FROM drink WHERE drink_mood = '" + moodParam + "' and drink_season = '" + seasonParam + "'";
-            System.out.println(sql);
 
              query = String.valueOf(session.createSQLQuery(sql).getResultList());
 

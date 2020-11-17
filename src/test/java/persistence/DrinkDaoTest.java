@@ -109,7 +109,7 @@ class DrinkDaoTest {
     @Test
     void GetDrinkNameSuccess() {
         String drinks =  genericDao.GetDrinkName("Celebratory", "Spring");
-        //assertEquals(1, drinks.size());
+        //assertEquals("Champagne cocktail", drinks.get(0));
         //System.out.println("this" + drinks);
     }
 

@@ -15,8 +15,9 @@ import javax.ws.rs.core.MediaType;
 public class CocktailDBDao {
     public ResponseDrink getResponseDrink() throws JsonProcessingException {
         Client client = ClientBuilder.newClient();
+        String cocktailName = "Champagne%20cocktail";
 
-        WebTarget target = client.target("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Champagne%20cocktail");
+        WebTarget target = client.target("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + cocktailName);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
         ObjectMapper mapper = new ObjectMapper();

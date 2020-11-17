@@ -20,15 +20,12 @@ public class Recipes {
 
     // The Java method will process HTTP GET requests
     @GET
-    //@Path("/{param}")
     // The Java method will produce content identified by the MIME Media type "application/json"
     @Produces({"application/json"})
     public Response getMessageJason() throws JsonProcessingException {
         //This should be a call to a DAO that would have a method to getByMood
-        GenericDao<Drink> genericDao = DaoFactory.createDao(Drink.class);
+        //GenericDao<Drink> genericDao = DaoFactory.createDao(Drink.class);
         //List<Drink> myDrinks = genericDao.getByPropertyEqual("name", drinkName);
-
-        GetDrinkNameForAPI dao = new GetDrinkNameForAPI();
 
         String strIngredient1;
         String strIngredient2;
@@ -41,6 +38,8 @@ public class Recipes {
         String strMeasurement3;
         String strMeasurement4;
         String strMeasurement5;
+
+        GetDrinkNameForAPI dao = new GetDrinkNameForAPI();
 
         for(DrinksItem drink : dao.getResponseDrinkFromAPI().getDrinks()) {
             if (drink.getStrIngredient1() == null) {
@@ -99,7 +98,7 @@ public class Recipes {
             }
 
             String myOneDrink =  "Your drink is "+ drink.getStrDrink() + "\n\nIngredient are " +
-                    "\n\n" + strIngredient1 + "\t\t" + strMeasurement1 +
+                    "\n\n" + strIngredient1 + "\t" + strMeasurement1 +
                     "\n" + strIngredient2 + "\t" + strMeasurement2 +
                     "\n" + strIngredient3 + "\t" + strMeasurement3 +
                     "\n" + strIngredient4 + "\t" + strMeasurement4 +

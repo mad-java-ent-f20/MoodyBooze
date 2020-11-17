@@ -1,7 +1,13 @@
 package entity;
 
+/**
+ * The type Drink name.
+ */
 public class DrinkName {
 
+    /**
+     * The Drink name.
+     */
     String DrinkName;
 
     @Override
@@ -11,10 +17,20 @@ public class DrinkName {
                 '}';
     }
 
+    /**
+     * Gets drink name.
+     *
+     * @return the drink name
+     */
     public String getDrinkName() {
         return DrinkName;
     }
 
+    /**
+     * Sets drink name.
+     *
+     * @param drinkName the drink name
+     */
     public void setDrinkName(String drinkName) {
         DrinkName = drinkName;
     }

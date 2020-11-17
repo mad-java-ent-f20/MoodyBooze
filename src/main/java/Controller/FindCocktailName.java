@@ -1,6 +1,7 @@
 package Controller;
 
 
+import api.Recipes;
 import entity.Drink;
 import entity.DrinkName;
 import org.apache.logging.log4j.LogManager;
@@ -32,7 +33,7 @@ public class FindCocktailName extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 
         String param1 = req.getParameter("mood");
@@ -40,11 +41,18 @@ public class FindCocktailName extends HttpServlet {
 
         GenericDao genericDao = new GenericDao(Drink.class);
         String cocktail =  genericDao.GetDrinkName(param1, param2);
+        cocktail = cocktail.replaceAll("\\s", "%20");
 
         DrinkName drink1 = new DrinkName();
         drink1.setDrinkName(cocktail);
+        System.out.println("FindCocktailName" + drink1.getDrinkName());
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/recipes");
+        resp.sendRedirect("http://localhost:8080/MoodyBooze_war/recipes");
+
+        //Recipes recipes = new Recipes();
+        //recipes.getMessageJason();
+
+        //RequestDispatcher dispatcher = req.getRequestDispatcher("/recipes");
         //dispatcher.forward(req, resp);
     }
 

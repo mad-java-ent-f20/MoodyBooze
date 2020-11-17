@@ -22,7 +22,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<FORM ACTION="findCocktailName" METHOD="GET">
+<FORM ACTION="findCocktailName" METHOD="Post">
     <TABLE>
         <div class="row form-group">
             <div class="col-md-6 mb-3 mb-md-0">
