@@ -23,14 +23,14 @@ public class Recipes {
     //@Path("/{param1}")
     // The Java method will produce content identified by the MIME Media type "application/json"
     @Produces({"application/json"})
-    public Response getMessageJason(@PathParam("param1") @NotEmpty String mood, @PathParam("param2") @NotEmpty String season) throws JsonProcessingException {
+    public Response getMessageJason(@PathParam("param1") String mood, @PathParam("param2") String season) throws JsonProcessingException {
 
         if(mood == null || mood.isEmpty()) {
             return Response.status(404).entity("myOneDrink404").build();
-        } else if(season == null || season.isEmpty()) {
-            return Response.status(400).entity("myOneDrink400").build();
-        } else if (mood == null || season == null) {
-            return Response.status(404).entity("Please enter mood and season again").build();
+//        } else if(season == null || season.isEmpty()) {
+//            return Response.status(400).entity("myOneDrink400").build();
+//        } else if (mood == null || season == null) {
+//            return Response.status(404).entity("Please enter mood and season again").build();
         } else  {
             GenericDao genericDao = new GenericDao(Drink.class);
             String cocktail =  genericDao.GetDrinkName(mood, season);
