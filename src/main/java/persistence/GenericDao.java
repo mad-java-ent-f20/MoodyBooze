@@ -167,14 +167,18 @@ public class GenericDao<T> {
     public String GetDrinkName(String moodParam, String seasonParam) {
         Session session = getSession();
         Transaction tx = null;
-        String  query = null;
+        Query query;
+        String s = null;
 
         try {
             tx = session.beginTransaction();
 
             String sql = "SELECT drink_name FROM drink WHERE drink_mood = '" + moodParam + "' and drink_season = '" + seasonParam + "'";
 
-             query = String.valueOf(session.createSQLQuery(sql).getResultList());
+            //query = String.valueOf(session.createSQLQuery(sql).getResultList());
+            query = session.createSQLQuery( sql );
+
+            s = (String) query.uniqueResult();
 
             tx.commit();
         } catch (HibernateException e) {
@@ -184,6 +188,6 @@ public class GenericDao<T> {
             session.close();
         }
 
-        return query;
+        return s;
     }
 }

@@ -4,7 +4,6 @@ package persistence;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import api.*;
-import entity.DrinkName;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
