@@ -104,7 +104,7 @@ class DrinkDaoTest {
     }
 
     /**
-     * Verify successful
+     * Verify successful Get Drink Name from database
      */
     @Test
     void GetDrinkNameSuccess() {

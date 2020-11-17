@@ -4,12 +4,10 @@ package persistence;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import api.*;
-
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
-
 
 public class CocktailDBDao {
     public ResponseDrink getResponseDrink(String nameDrink) throws JsonProcessingException {
