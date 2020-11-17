@@ -35,7 +35,6 @@ public class FindCocktailName extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
         String param1 = req.getParameter("mood");
         String param2 = req.getParameter("season");
 
@@ -45,15 +44,9 @@ public class FindCocktailName extends HttpServlet {
 
         DrinkName drink1 = new DrinkName();
         drink1.setDrinkName(cocktail);
-        System.out.println("FindCocktailName" + drink1.getDrinkName());
+        System.out.println("FindCocktailName1 " + drink1.getDrinkName());
 
         resp.sendRedirect("http://localhost:8080/MoodyBooze_war/recipes");
-
-        //Recipes recipes = new Recipes();
-        //recipes.getMessageJason();
-
-        //RequestDispatcher dispatcher = req.getRequestDispatcher("/recipes");
-        //dispatcher.forward(req, resp);
     }
 
 }

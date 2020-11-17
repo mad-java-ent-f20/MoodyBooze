@@ -5,6 +5,13 @@ package entity;
  */
 public class DrinkName {
 
+    public DrinkName() {
+    }
+
+    public DrinkName(String drinkName) {
+        DrinkName = drinkName;
+    }
+
     /**
      * The Drink name.
      */

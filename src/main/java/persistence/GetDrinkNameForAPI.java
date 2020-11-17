@@ -13,16 +13,13 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import java.util.Collections;
 
-public class GetDrinkNameForAPI extends DrinkName {
-    public GetDrinkNameForAPI() {
-        super();
-    }
+public class GetDrinkNameForAPI {
 
     public ResponseDrink getResponseDrinkFromAPI() throws JsonProcessingException {
 
         //getDrinkName();
 
-        System.out.println("drink1.getDrinkName() Super " + getDrinkName());
+//        System.out.println("drink1.getDrinkName() Super " + getDrinkName());
         Client client = ClientBuilder.newClient();
 
         DrinkName drink1 = new DrinkName();
