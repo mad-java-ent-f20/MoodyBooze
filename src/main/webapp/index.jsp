@@ -92,6 +92,7 @@
             <div class="links w-row">
                 <div class="column w-col w-col-4">
                     <div class="text-block-2">API DOCUMENTATION</div>
+                    <a href="apiDoc.js">API DOCUMENTATION</a>
                     <ul role="list" class="list w-list-unstyled">
                         <li>
                             <a href="#">link to doc</a>

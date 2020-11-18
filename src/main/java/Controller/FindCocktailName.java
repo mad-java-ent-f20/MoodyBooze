@@ -23,6 +23,7 @@ public class FindCocktailName extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         String param1 = req.getParameter("mood");
         String param2 = req.getParameter("season");
 
