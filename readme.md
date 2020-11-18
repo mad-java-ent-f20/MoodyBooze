@@ -13,7 +13,6 @@ Since the beginning of the coronavirus pandemic, having a bartender fix you a fa
 For people who want to add some festivity to their night in, and perhaps use up the remaining Kahlua from New Years' Eve 2019, the MoodyBooze webservice looks up drink recipes. Input options include:
 * mood
 * season
-* ingredients
 
 For example, someone who is feeling ambitious on a dark winter morning might be interested in a mulled wine to help them draft a few thousand words of their novel. The MoodyBooze web service will find them a recipe.
 
