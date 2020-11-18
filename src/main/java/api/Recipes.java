@@ -22,7 +22,7 @@ public class Recipes {
     @Path("/{param1}/{param2}")
     //@Path("/{param1}")
     // The Java method will produce content identified by the MIME Media type "application/json"
-    @Produces({"application/json"})
+    @Produces("text/plain")
     public Response getMessageJason(@PathParam("param1") String mood, @PathParam("param2") String season) throws JsonProcessingException {
 
         GenericDao genericDao = new GenericDao(Drink.class);

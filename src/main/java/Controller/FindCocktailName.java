@@ -30,7 +30,7 @@ public class FindCocktailName extends HttpServlet {
         Recipes recipes = new Recipes();
         recipes.getMessageJason(param1, param2);
 
-        resp.sendRedirect("http://localhost:8080/MoodyBooze_war/recipes/" + param1 + "/" + param2);
+        resp.sendRedirect("http://localhost:8080/MoodyBooze/recipes/" + param1 + "/" + param2);
 
 
 

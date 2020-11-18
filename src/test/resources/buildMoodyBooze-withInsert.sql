@@ -18,14 +18,14 @@
 --
 -- Table structure for table `drink`
 --
-CREATE DATABASE moodybooze
+CREATE DATABASE moodybooze;
   USE moodybooze;
 DROP TABLE IF EXISTS `drink`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `drink` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `drink_name` varchar(20) DEFAULT NULL,
+  `drink_name` varchar(30) DEFAULT NULL,
   `drink_mood` varchar(20) DEFAULT NULL,
   `drink_season` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
