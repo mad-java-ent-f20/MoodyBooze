@@ -11,11 +11,11 @@
 ### GET
 Returns a drink recipe
 
-.. code-block:: bash
+
 
     GET http://localhost:8080/MoodyBooze_war/recipes/Celebratory/Spring
 
-.. code-block:: bash
+
 
 ### Example Output
     Your drink: Champagne Cocktail
