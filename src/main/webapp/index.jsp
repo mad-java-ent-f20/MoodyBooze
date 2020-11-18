@@ -31,6 +31,39 @@
         <div data-w-id="3fd5aeb3-22da-ed60-7286-0d11f16597d3" style="opacity:0" class="content">
             <div class="name">Welcome to</div>
             <h1 class="tagline"><strong class="bold-text">MoodyBooze</strong></h1>
+            <div class="list">
+            <h2>Choose your mood:</h2>
+                <ul>
+                    <li>Celebratory</li>
+                    <li>Crushed</li>
+                    <li>Blissful</li>
+                    <li>Calm</li>
+                    <li>Stressed</li>
+                    <li>Excited</li>
+                    <li>Energetic</li>
+                    <li>Flirty</li>
+                    <li>Drained</li>
+                    <li>Disappointed</li>
+                    <li>Gloomy</li>
+                    <li>Anxious</li>
+                    <li>Grumpy</li>
+                    <li>Peaceful</li>
+                    <li>Cranky</li>
+                    <li>Ambitious</li>
+                    <li>Relieved</li>
+                    <li>Hopeful</li>
+                </ul>
+                <br>
+                <h2>Choose your Season:</h2>
+                <ul>
+                    <li>Spring</li>
+                    <li>Summer</li>
+                    <li>Fall</li>
+                    <li>Winter</li>
+                </ul>
+            </div>
+            <br><br><br>
+            <div class="list">
             <FORM ACTION="findCocktailName" METHOD="Post">
                 <TABLE>
                     <div class="row form-group">
@@ -43,21 +76,27 @@
                             <input type="text" id="season" name="season" class="form-control">
                         </div>
                     </div>
+
+                    <br> <br>
+
                     <div class="row form-group">
                         <div class="col-md-12">
-                            <input type="submit" name="submit" value="Bottoms Up!" class="btn btn-primary py-2 px-4 text-white">
+                            <input type="submit" name="submit" value="Find My Drink!" class="btn btn-primary py-2 px-4 text-white">
                         </div>
                     </div>
+                    <br> <br>
+                    <br> <br>
                 </TABLE>
             </FORM>
+            </div>
             <div class="links w-row">
                 <div class="column w-col w-col-4">
-                    <div class="text-block-2">Connect</div>
+                    <div class="text-block-2">API DOCUMENTATION</div>
                     <ul role="list" class="list w-list-unstyled">
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="#">link to doc</a>
                         </li>
-                        <li>
+                       <!-- <li>
                             <a href="#">Email</a>
                         </li>
                         <li>
@@ -90,7 +129,7 @@
                         </li>
                         <li>
                             <a href="#">Link Three</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>

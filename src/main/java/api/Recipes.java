@@ -101,7 +101,7 @@ public class Recipes {
                 strMeasurement5 = (String) drink.getStrMeasure5();
             }
 
-            String myOneDrink =  "Your drink is "+ drink.getStrDrink() + "\n\nIngredient are " +
+            String myOneDrink =  "Your drink: "+ drink.getStrDrink() + "\n\nIngredients: " +
                     "\n\n" + strIngredient1 + "\t" + strMeasurement1 +
                     "\n" + strIngredient2 + "\t" + strMeasurement2 +
                     "\n" + strIngredient3 + "\t" + strMeasurement3 +

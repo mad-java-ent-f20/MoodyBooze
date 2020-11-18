@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="container-fluid">
-    <h2>Search Results: </h2>
+    <h1>Search Results: </h1>
 
 
     <table border=1 width=30% height=40% text-align="center">
@@ -30,11 +30,13 @@
         </c:forEach>
 
     </table>
+    <br><br>
 
-    <a href="index.jsp">Back to homepage</a>
 
 </div>
+<h2>Bottoms Up!</h2>
 
+<a href="index.jsp">Back to homepage</a>
 
 </body>
 </html>

@@ -58,7 +58,7 @@ a {
 .bio {
   margin-bottom: 40px;
   font-family: Lora, sans-serif;
-  color: #848d96;
+  color: #47bec7;
   font-size: 21px;
   line-height: 140%;
 }
@@ -74,7 +74,7 @@ a {
 
 .list {
   font-family: Lora, sans-serif;
-  color: #848d96;
+  color: #35b8ef;
   font-size: 16px;
   line-height: 160%;
 }
@@ -236,6 +236,9 @@ a {
   .image {
     height: 240px;
     max-height: 30vh;
+  }
+  ul {
+  column-count: 2;
   }
 }
 
