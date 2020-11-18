@@ -50,3 +50,4 @@ fabric.properties
 hibernate.cfg.xml
 .properties
 database.properties
+log4j2.properties
