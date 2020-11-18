@@ -24,7 +24,8 @@
 <body class="body">
 <div class="columns w-row">
     <div class="leftcontent w-col w-col-6 w-col-stack">
-        <div data-w-id="b84f5156-c6e2-fb1d-6606-98a08030a472" style="opacity:0" class="image"></div>
+        <div data-w-id="b84f5156-c6e2-fb1d-6606-98a08030a472" width="50" height="60" class="image"></div>
+
     </div>
     <div class="rightcontent w-col w-col-6 w-col-stack">
         <div data-w-id="3fd5aeb3-22da-ed60-7286-0d11f16597d3" style="opacity:0" class="content">
