@@ -9,7 +9,17 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 
+/**
+ * The type Cocktail db dao.
+ */
 public class CocktailDBDao {
+    /**
+     * Gets response drink, a collection of DrinksItem objects, from the cocktailDB.
+     *
+     * @param nameDrink the name drink
+     * @return the response drink
+     * @throws JsonProcessingException the json processing exception
+     */
     public ResponseDrink getResponseDrink(String nameDrink) throws JsonProcessingException {
 
         Client client = ClientBuilder.newClient();

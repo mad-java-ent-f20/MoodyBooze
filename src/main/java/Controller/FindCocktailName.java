@@ -13,14 +13,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
+
 /**
- * A simple servlet to welcome the user.
- * @author pwaite
+ * Servlet that gives people a chance to use the MoodyBooze webservice through a UI instead of using a URL call.
  */
 @WebServlet
         (urlPatterns = { "/findCocktailName" } )
 public class FindCocktailName extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
+
+    /* Accepts parameters from the user and redirects to the core API class (recipes.java)
+    * */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -31,8 +34,6 @@ public class FindCocktailName extends HttpServlet {
         recipes.getMessageJason(param1, param2);
 
         resp.sendRedirect("http://localhost:8080/MoodyBooze/recipes/" + param1 + "/" + param2);
-
-
 
 
     }

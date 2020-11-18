@@ -6,14 +6,14 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 /**
- * The type Drink.
+ * The Drink entity. Each drink has a name, and associated mood and season.
  */
 @Entity(name = "Drink")
 @Table(name = "drink")
 public class Drink {
 
     /**
-     * The Id.
+     * The Id, primary key for the drink database.
      */
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator="native")

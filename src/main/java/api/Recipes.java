@@ -14,10 +14,21 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
+/**
+ * The Recipes class. Uses DAOs to access the Drink entity to look up a beverage name, and to access the CocktailDB getResponse method to look up a recipe.
+ */
 @Path("/recipes")
 public class Recipes {
 
-    // The Java method will process HTTP GET requests
+    /**
+     * Generates a message containing recipe information. Takes in mood and season information, uses the DAO to look up the drink in the database, and calls the getResponseDrink method of the CocktailDB web service to get more info.
+     *
+     * @param mood   the mood
+     * @param season the season
+     * @return a formatted string of information about how to prepare the recommended drink.
+     * @throws JsonProcessingException the json processing exception
+     */
+// The Java method will process HTTP GET requests
     @GET
     @Path("/{param1}/{param2}")
     //@Path("/{param1}")
