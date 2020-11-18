@@ -28,7 +28,7 @@ public class Recipes {
         GenericDao genericDao = new GenericDao(Drink.class);
         String cocktail =  genericDao.GetDrinkName(mood, season);
         if(cocktail == null) {
-            return Response.status(500).entity("Status:500(Internal Server Error)").build();
+            return Response.status(500).entity("Status:500(Invalid Parameter Input)").build();
         }
         String cocktailWithoutSpace = cocktail.replaceAll("\\s", "%20");
 

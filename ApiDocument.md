@@ -4,13 +4,15 @@
 
 | Parameter | Description| Type/Format | Required/Optional|
 |------|------|-------|------|
-|Mood|Mood of user| String | Required
+|Mood|The mood of user| String | Required
 |Season| Current season for user |String|  Required | 
 
 
-### GET
+### Service Call
+GET:
 Returns a drink recipe
 
+    GET http://localhost:8080/MoodyBooze_war/recipes/{Mood}/{Season}
 
 
     GET http://localhost:8080/MoodyBooze_war/recipes/Celebratory/Spring
@@ -23,19 +25,24 @@ Returns a drink recipe
     Ingredients: 
     
     Champagne   Chilled 
-    Sugar	    1 piece 
-    Bitters	    2 dashes 
+    Sugar     1 piece 
+    Bitters     2 dashes 
     Lemon peel  1 twist of 
-    Cognac	    1 dash
+    Cognac     1 dash
 
 
 ### Error Response
 * Status Code: 500
+    * Content:
+
+
+    Invalid Parameter Input
+
+
 
 ### Success Response
 * Status Code: 200
-
-
-
-             
-
+     * Content:
+ 
+ 
+     *Refer to Example Output

@@ -69,11 +69,11 @@
                     <div class="row form-group">
                         <div class="col-md-6 mb-3 mb-md-0">
                             <label class="text-black" for="mood">Mood</label>
-                            <input type="text" id="mood" name="mood" class="form-control">
+                            <input type="text" id="mood" name="mood" class="form-control" required>
                         </div>
                         <div class="col-md-6">
                             <label class="text-black" for="season">Season</label>
-                            <input type="text" id="season" name="season" class="form-control">
+                            <input type="text" id="season" name="season" class="form-control" required>
                         </div>
                     </div>
 
@@ -91,12 +91,10 @@
             </div>
             <div class="links w-row">
                 <div class="column w-col w-col-4">
-                    <div class="text-block-2">API DOCUMENTATION</div>
-                    <a href="apiDoc.js">API DOCUMENTATION</a>
-                    <ul role="list" class="list w-list-unstyled">
-                        <li>
-                            <a href="#">link to doc</a>
-                        </li>
+
+                    <div class="text-block-2">RESOURCE</div>
+                    <a href="https://github.com/mad-java-ent-f20/MoodyBooze/blob/main/ApiDocument.md">API DOCUMENTATION</a>
+
                        <!-- <li>
                             <a href="#">Email</a>
                         </li>
