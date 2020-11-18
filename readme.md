@@ -1,6 +1,6 @@
 # MoodyBooze
 
-This repository contains a webservice that helps people set the menu for a practical night in by providing drink recipes based on their mood, the current season, and what ingredients they have available in their kitchen. 
+This repository contains a webservice that helps people set the menu for a practical night in by providing drink recipes based on their mood and the current season
 
 ### Problem Statement
 
