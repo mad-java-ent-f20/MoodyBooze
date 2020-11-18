@@ -170,6 +170,8 @@ public class GenericDao<T> {
         Query query;
         String drink = null;
 
+
+
         try {
             tx = session.beginTransaction();
 
