@@ -46,3 +46,7 @@ Returns a drink recipe
  
  
      *Refer to Example Output
+     
+
+### Resource
+* https://www.thecocktaildb.com/api.php
