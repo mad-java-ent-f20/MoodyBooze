@@ -24,26 +24,26 @@
 | [x] | Caroline| Updating the hard-coded service and application configuration to utilize the DAO instead of returning a hard-coded string|
 | [x] | Ying| Create the DAO and other classes to consume the CocktailDB web service |
 | [x] | Alisa| Write unit tests to test the consumption of the CocktailDB web service |
-| [ ] | Caroline| Determine how to do documentation (what will auto-generate, what to write ourselves)|
-| [ ] | Alisa| Begin setting up the landing page for the web service |
-| [ ] | Team| Add to the project log about your work/research/findings|
-| [ ] | Janak|Deploy application updates to AWS|
+| [x] | Caroline| Determine how to do documentation (what will auto-generate, what to write ourselves)|
+| [x] | Alisa| Begin setting up the landing page for the web service |
+| [x] | Team| Add to the project log about your work/research/findings|
+| [x] | Janak|Deploy application updates to AWS|
 
 ## Week 3 (11) - Starts Nov 11 , ends Nov 17
 | Done? | Person responsible | Task |
 |------|------|-------|
 | [x] |Sort of done... we're not returning an object right now. | Update the service to retreive data from the databse and use the Cocktail webservice (no more hardcorded results)|
-| [ ] | | Format/label the data results|
-| [ ] |Caroline| Write documentation describing query parameters, etc|
-| [ ] |Janak| Expand the service to include a two-parameter (season and mood)|
-| [ ] |Not doing this?| Add to the database to include ingredients information for each drink |
-| [ ] |Team during meeting on Monday| Test the updates to the service|
-| [ ] |Alisa| Continue building landing page|
-| [ ] |Janak| Deploy application updates to AWS|
-| [ ] |Caroline - during practice| Create an outline for the project presentation|
-| [ ] |Team during meeting Wednesday| Finish scripting each portion of the presentation|
-| [ ] | | Collect screen shots to add to presentation|
-| [ ] |Team - Wednesday before class| Practice presentation|
+| [x] | | Format/label the data results|
+| [x] |Caroline| Write documentation describing query parameters, etc|
+| [x] |Janak| Expand the service to include a two-parameter (season and mood)|
+| [x] |Not doing this?| Add to the database to include ingredients information for each drink |
+| [x] |Team during meeting on Monday| Test the updates to the service|
+| [x] |Alisa| Continue building landing page|
+| [x] |Janak| Deploy application updates to AWS|
+| [x] |Caroline - during practice| Create an outline for the project presentation|
+| [x] |Team during meeting Wednesday| Finish scripting each portion of the presentation|
+| [x] | | Collect screen shots to add to presentation|
+| [x] |Team - Wednesday before class| Practice presentation|
 
 Monday night 8:15 - meet up and make sure API is working correctly
 Documentation should be ready
